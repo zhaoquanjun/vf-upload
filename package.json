@@ -1,0 +1,36 @@
+{
+  "name": "upload-video",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a module for upload video by fragment",
+  "keywords": [
+    "vue",
+    "vue3",
+    "video",
+    "upload",
+    "fragment"
+  ],
+  "license": "MIT",
+  "main": "./lib/video-upload.umd.js",
+  "module": "./lib/video-upload.es.js",
+  "exports": {
+    ".": {
+      "import": "./lib/video-upload.es.js",
+      "require": "./lib/video-upload.umd.js"
+    }
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.0.0",
+    "element-plus": "^2.2.10",
+    "vite": "^3.0.3"
+  }
+}
