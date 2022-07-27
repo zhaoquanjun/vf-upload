@@ -1,7 +1,6 @@
 {
-  "name": "upload-video",
-  "private": true,
-  "version": "0.0.0",
+  "name": "video-upload",
+  "version": "1.0.1",
   "description": "a module for upload video by fragment",
   "keywords": [
     "vue",
@@ -30,7 +29,12 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.0",
+    "axios": "^0.27.2",
     "element-plus": "^2.2.10",
     "vite": "^3.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhaoquanjun/vf-upload.git"
   }
 }

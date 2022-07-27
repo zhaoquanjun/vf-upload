@@ -1,3 +1,5 @@
+import axios from 'axios'
+
 class UploadVideo {
   constructor() {
     this.file = null
@@ -6,15 +8,21 @@ class UploadVideo {
     this.timer = null
     this.progressCallback = null
     this.compelteCallback = null
+    this.uploadMethod = 'POST'
+    this.uploadUrl = ''
   }
 
   init(options) {
+    // no url check
+    if (!options.url) return void console.warn("It won't work without a URL, make sure you provide the URL property")
     // size 默认单位是M
-    const { file, size, progressCallback, compelteCallback } = options
-    this.file = file
-    this.size = (size || 1) * 1024 * 1024
-    this.progressCallback = progressCallback
-    this.compelteCallback = compelteCallback
+    this.file = options?.file
+    this.size = (options?.size || 1) * 1024 * 1024
+    this.progressCallback = options?.progressCallback
+    this.compelteCallback = options?.compelteCallback
+    this.uploadMethod = options.method || 'POST'
+    this.uploadUrl = options.url || ''
+
     // start upload work
     this.getFragments()
   }
@@ -64,11 +72,15 @@ class UploadVideo {
 
     function load() {
       return new Promise((resolve, reject) => {
-        count++
-        _this.progressFn(parseInt((count / chunkArr.length) * 100))
-        setTimeout(() => {
-          resolve(count)
-        }, 2000)
+        axios[_this.uploadMethod.toLocaleLowerCase()](_this.uploadUrl).then(res => {
+          if (res.status == 200) {
+            count++
+            _this.progressFn(parseInt((count / chunkArr.length) * 100))
+            resolve(count)
+          } else {
+            console.error('A network request error occurred,  please check Network to confirm the cause of the error')
+          }
+        })
       })
     }
   }

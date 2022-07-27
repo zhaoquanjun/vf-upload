@@ -12,6 +12,8 @@ const handleChange = function (file) {
   upload.init({
     file: file.raw,
     size: 1,
+    url: 'https://run.mocky.io/v3/9d059bf9-4660-45f2-925d-ce80ad6c4d15',
+    method: 'post',
     progressCallback: (pro) => {
       progress.value = pro
     },
