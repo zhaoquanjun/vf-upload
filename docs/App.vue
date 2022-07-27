@@ -1,5 +1,6 @@
 <script setup>
-import UploadVideo from '../packages/upload'
+// import VfUpload  from '../packages/upload'
+import VfUpload from 'video-upload'
 import { ref } from 'vue'
 
 const fileList = ref([])
@@ -7,7 +8,7 @@ const fileList = ref([])
 let progress = ref(0)
 
 const handleChange = function (file) {
-  const upload = new UploadVideo()
+  const upload = new VfUpload()
 
   upload.init({
     file: file.raw,

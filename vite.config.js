@@ -35,7 +35,7 @@ export default defineConfig({
   plugins: [vue(), resolvePlugin(), htmlPlugin()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'packages/index.js'),
+      entry: path.resolve(__dirname, 'packages/upload.js'),
       name: 'video-upload',
       fileName: (format) => `video-upload.${format}.js`
     },

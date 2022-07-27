@@ -30,6 +30,9 @@ This is a js for use</br>
 you can import it and use as follows</br>
 
 ```
+
+import VfUpload from 'video-upload'
+
 const upload = new UploadVideo()
 
   upload.init({

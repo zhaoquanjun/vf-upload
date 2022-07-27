@@ -1,6 +1,6 @@
 {
   "name": "video-upload",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "a module for upload video by fragment",
   "keywords": [
     "vue",

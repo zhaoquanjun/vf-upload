@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-class UploadVideo {
+class VfUpload {
   constructor() {
     this.file = null
     this.size = 0
@@ -143,4 +143,4 @@ class UploadVideo {
   }
 }
 
-export default UploadVideo
+export default VfUpload

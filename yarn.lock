@@ -507,6 +507,13 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
+video-upload@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/video-upload/-/video-upload-1.0.2.tgz#917dbb55574a177e896b2a51bf521e8d52dacabc"
+  integrity sha512-/hDCTwBAc8ElP88I06IosIcbM72qj+eu3Ywkp0cxw7ouEsmDqvmbGipRWsuVgPnJLX1+PObaThZ4vt68hfSQ1Q==
+  dependencies:
+    vue "^3.2.37"
+
 vite@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/vite/-/vite-3.0.3.tgz#c7b2ed9505a36a04be1d5d23aea4ea6fc028043f"
