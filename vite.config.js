@@ -11,7 +11,10 @@ const htmlPlugin = () => {
   }
 }
 
+
 const resolvePlugin = () => {
+  
+console.log(import.meta, process.cwd(), '?????')
   return {
     name: 'resolve-muted',
     config: () => ({
@@ -32,6 +35,7 @@ const resolvePlugin = () => {
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  mode: 'development',
   plugins: [vue(), resolvePlugin(), htmlPlugin()],
   build: {
     lib: {

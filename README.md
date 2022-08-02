@@ -13,15 +13,15 @@ Hope it can help complete your work smoothly
 
 npm
 ```
-npm install qjsearch 
+npm install video-upload
 ```
 cnpm
 ```
-cnpm install qjsearch
+cnpm install video-upload
 ```
 yarn
 ```
-yarn add qjsearch
+yarn add video-upload
 ```
 
 ## Use

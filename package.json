@@ -1,6 +1,6 @@
 {
   "name": "video-upload",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "a module for upload video by fragment",
   "keywords": [
     "vue",
@@ -20,7 +20,7 @@
   },
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --mode=development",
     "build": "vite build",
     "preview": "vite preview"
   },
